@@ -1,0 +1,21 @@
+﻿@model mvc_cs.Models.ViewImagesModel
+
+@{
+    ViewBag.Title = "Error";
+}
+<h2>Album Images</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    
+    <div style="width: 100%; height: 400px; overflow: auto;">
+        @foreach (var item in Model.SrcList)
+        {
+  
+            <img src= "@Url.Content(item.imageSrc)" alt="Image" style="height:75px;width:100px;"/>
+
+        }
+    </div>
+}
+

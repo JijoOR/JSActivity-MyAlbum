@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CuteWebUI.AjaxUploader.dll">
+      <publishTime>12/09/2013 11:20:10</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/30/2013 17:44:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/19/2012 10:59:52</publishTime>
+    </File>
+    <File Include="bin/MVCService.dll">
+      <publishTime>12/31/2013 13:12:28</publishTime>
+    </File>
+    <File Include="bin/mvc_cs.dll">
+      <publishTime>12/31/2013 14:04:59</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/12/2013 08:54:34</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>07/09/2012 00:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>07/10/2012 12:03:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>07/10/2012 21:51:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>08/17/2012 11:22:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>07/10/2012 12:03:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>07/10/2012 12:03:34</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>07/10/2012 12:03:34</publishTime>
+    </File>
+    <File Include="Content/circle.png">
+      <publishTime>09/04/2012 11:50:08</publishTime>
+    </File>
+    <File Include="Content/css/style.css">
+      <publishTime>12/31/2013 14:02:24</publishTime>
+    </File>
+    <File Include="Content/demo.css">
+      <publishTime>12/30/2013 17:36:02</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_closebox.png">
+      <publishTime>10/21/2008 18:18:28</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_left.png">
+      <publishTime>02/26/2009 19:45:02</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_progress.png">
+      <publishTime>10/21/2008 18:02:20</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_right.png">
+      <publishTime>02/26/2009 19:44:34</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_e.png">
+      <publishTime>10/21/2009 15:26:54</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_n.png">
+      <publishTime>10/21/2009 15:24:10</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_ne.png">
+      <publishTime>10/21/2009 15:24:58</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_nw.png">
+      <publishTime>10/21/2009 15:22:54</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_s.png">
+      <publishTime>10/21/2009 15:20:46</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_se.png">
+      <publishTime>10/21/2009 15:25:30</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_sw.png">
+      <publishTime>10/21/2009 15:20:06</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_shadow_w.png">
+      <publishTime>10/21/2009 15:22:06</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_title_left.png">
+      <publishTime>04/21/2008 23:37:28</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_title_main.png">
+      <publishTime>04/21/2008 23:37:36</publishTime>
+    </File>
+    <File Include="Content/fancybox/fancy_title_right.png">
+      <publishTime>04/21/2008 23:37:32</publishTime>
+    </File>
+    <File Include="Content/fancybox/jquery.fancybox-1.2.6.css">
+      <publishTime>11/16/2009 19:09:22</publishTime>
+    </File>
+    <File Include="Content/fancybox/jquery.fancybox-1.2.6.pack.js">
+      <publishTime>11/16/2009 19:14:58</publishTime>
+    </File>
+    <File Include="Content/jquery-1.9.1.js">
+      <publishTime>12/31/2013 11:10:56</publishTime>
+    </File>
+    <File Include="Content/js/jquery-css-transform.js">
+      <publishTime>08/23/2011 18:57:00</publishTime>
+    </File>
+    <File Include="Content/js/main.js">
+      <publishTime>08/23/2011 20:25:08</publishTime>
+    </File>
+    <File Include="Content/style.css">
+      <publishTime>12/31/2013 13:53:29</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/04/2012 11:47:12</publishTime>
+    </File>
+    <File Include="images/1_03.png">
+      <publishTime>12/31/2013 09:39:21</publishTime>
+    </File>
+    <File Include="images/buttonbg.jpg">
+      <publishTime>12/31/2013 09:55:10</publishTime>
+    </File>
+    <File Include="images/login_main_img.png">
+      <publishTime>12/31/2013 09:39:21</publishTime>
+    </File>
+    <File Include="images/password.png">
+      <publishTime>12/31/2013 09:39:21</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic1.jpg">
+      <publishTime>08/28/1997 05:13:04</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic10.jpg">
+      <publishTime>08/28/1997 05:15:16</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic11.jpg">
+      <publishTime>08/28/1997 05:15:20</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic12.jpg">
+      <publishTime>08/28/1997 05:15:26</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic2.jpg">
+      <publishTime>08/28/1997 05:13:12</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic3.jpg">
+      <publishTime>08/28/1997 05:13:14</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic4.jpg">
+      <publishTime>08/28/1997 05:13:30</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic5.jpg">
+      <publishTime>08/28/1997 05:13:38</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic6.jpg">
+      <publishTime>08/28/1997 05:13:54</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic7.jpg">
+      <publishTime>08/28/1997 05:13:56</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic8.jpg">
+      <publishTime>08/28/1997 05:13:00</publishTime>
+    </File>
+    <File Include="images/sliderImages/pic9.jpg">
+      <publishTime>08/28/1997 05:14:04</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic1.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic10.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic11.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic12.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic2.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic3.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic4.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic5.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic6.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic7.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic8.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/sliderImages/thumb_pic9.jpg">
+      <publishTime>07/01/2011 06:46:22</publishTime>
+    </File>
+    <File Include="images/user.png">
+      <publishTime>12/31/2013 09:39:21</publishTime>
+    </File>
+    <File Include="images/user_icon.png">
+      <publishTime>12/31/2013 09:39:22</publishTime>
+    </File>
+    <File Include="installation.htm">
+      <publishTime>03/13/2013 02:25:26</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>12/31/2013 14:03:37</publishTime>
+    </File>
+    <File Include="myfolder/Chrysanthemum.jpg">
+      <publishTime>12/30/2013 15:38:13</publishTime>
+    </File>
+    <File Include="UploadHandler.ashx">
+      <publishTime>09/04/2012 11:48:24</publishTime>
+    </File>
+    <File Include="Views/Demo/CreateAlbum.cshtml">
+      <publishTime>12/31/2013 13:36:08</publishTime>
+    </File>
+    <File Include="Views/Demo/PerviousAlbum.cshtml">
+      <publishTime>12/31/2013 13:33:30</publishTime>
+    </File>
+    <File Include="Views/Demo/selecting_multiple_files.cshtml">
+      <publishTime>12/31/2013 09:27:07</publishTime>
+    </File>
+    <File Include="Views/Demo/ViewUploadImages.cshtml">
+      <publishTime>12/31/2013 13:34:07</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>09/04/2012 11:48:30</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/31/2013 14:03:44</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>09/04/2012 11:48:06</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/04/2012 11:48:30</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/31/2013 11:44:36</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

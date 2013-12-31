@@ -1,0 +1,59 @@
+﻿@model mvc_cs.Models.CreateAlbumModel
+
+<h2>Create a new Studio Album</h2>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+  
+  <table style="padding:4px 4px 4px 4px;">
+
+      <tr>
+          <td>
+              Album Name
+          </td>
+          <td>
+              @Html.TextBoxFor(m=>m.AlbumName, new { @class = "textfield", autocomplete = "off",required=true } )
+          </td>
+      </tr>
+      <tr>
+          <td>
+              Description
+          </td>
+          <td>
+              @Html.TextBoxFor(m=>m.Description, new { @class = "textfield", autocomplete = "off",required=true })
+          </td>
+      </tr>
+      <tr>
+          <td>
+
+          </td>
+          <td>
+              <input type="submit" value="Create" class="button"/>
+          </td>
+      </tr>
+   <tr>
+       <td colspan="5">
+            <p style="color:red;">@ViewBag.Message</p>
+       </td>
+   </tr>
+      
+  </table>
+  
+  
+  }
+
+<style>
+
+    .button
+{
+	background-image: url('../images/buttonbg.jpg');background-repeat: repeat-x;font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;color: #1A3A60;border: 1px solid #9a999a;padding:4px;height: 26px;
+}
+    .textfield {
+	font:normal 11px Verdana, Arial, Helvetica, sans-serif;height:16px;border:solid 1px #bababa; padding-top:4px;
+	line-height:14px;width:275px;-webkit-box-shadow:inset 2px 2px 5px 0px #e5e5e5;-moz-box-shadow:inset 2px 2px 5px 0px #e5e5e5;
+	box-shadow:inset 2px 2px 5px 0px #e5e5e5;}
+	
+.textfield:focus {
+	border:solid 1px #aead57;background-color: #fef9bd;}
+</style>

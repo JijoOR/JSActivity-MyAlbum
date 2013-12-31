@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PersonalAlbumsModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="PersonalAlbumsContainer" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Albums" EntityType="PersonalAlbumsModel.Album" />
+    <EntitySet Name="Users" EntityType="PersonalAlbumsModel.User" />
+    <AssociationSet Name="FK_Albums_Users" Association="PersonalAlbumsModel.FK_Albums_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Albums" EntitySet="Albums" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Album">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="AlbumName" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="AlbumDescription" Type="String" MaxLength="1050" Unicode="true" FixedLength="false" />
+    <Property Name="CreadedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="User" Relationship="PersonalAlbumsModel.FK_Albums_Users" FromRole="Albums" ToRole="Users" />
+    <Property Type="String" Name="FolderName" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="150" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Albums" Relationship="PersonalAlbumsModel.FK_Albums_Users" FromRole="Users" ToRole="Albums" />
+  </EntityType>
+  <Association Name="FK_Albums_Users">
+    <End Role="Users" Type="PersonalAlbumsModel.User" Multiplicity="1" />
+    <End Role="Albums" Type="PersonalAlbumsModel.Album" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Albums">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

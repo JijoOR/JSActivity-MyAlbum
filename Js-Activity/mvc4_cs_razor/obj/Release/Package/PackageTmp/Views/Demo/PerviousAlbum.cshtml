@@ -1,0 +1,110 @@
+﻿@model mvc_cs.Models.PreviousModel
+
+@{
+    ViewBag.Title = "PerviousAlbum";
+}
+
+<script src="~/Content/jquery-1.9.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: '@Url.Action("GetValue", "Demo")',
+             type: "POST",
+             dataType: "json",
+             contentType: "application/json",
+             data: { groupId: 'ae09a080-5d7c-4e92-9a87-591574b7c4b8' },
+             success: function (data) {
+                 alert(data);
+                 buildHtmlTable(data);
+                
+             }
+         });
+    });
+
+
+    function buildHtmlTable(myList)
+    {
+      
+        var columns = addAllColumnHeaders(myList);
+
+        for (var i = 0 ; i < myList.length ; i++) 
+        {
+            var row$ = $('<tr/>');
+            for (var colIndex = 0 ; colIndex < columns.length ; colIndex++) 
+            {
+                var cellValue = myList[i][columns[colIndex]];
+
+                if (cellValue == null) { cellValue = ""; }
+
+                row$.append($('<td/>').html(cellValue));
+            }
+            $("#excelDataTable").append(row$);
+        }
+        
+    }
+    // Adds a header row to the table and returns the set of columns.
+    // Need to do union of keys from all records as some records may not contain
+    // all records
+    function addAllColumnHeaders(myList)
+    {
+        var columnSet = [];
+        var headerTr$ = $('<tr/>');
+
+        for (var i = 0 ; i < myList.length ; i++)
+        {
+            var rowHash = myList[i];
+            for (var key in rowHash)
+            {
+                if ($.inArray(key, columnSet) == -1)
+                {
+                    columnSet.push(key);
+                    headerTr$.append($('<th/>').html(key));
+                }
+            }
+        }
+        $("#excelDataTable").append(headerTr$);
+
+        return columnSet;
+    }​
+    
+</script>
+
+<h2>My Album</h2>
+<div>
+
+    @Html.ActionLink("Create  New", "CreateAlbum", "Demo")
+
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <table id="excelDataTable" border="1" style="width:50%;text-align:left;">
+        
+        <tr>
+            <td style="width:20%;">
+                View
+            </td>
+            <td>Album Name
+            </td>
+        </tr>
+
+        @foreach (var item in Model.PreAlbumList)
+        {
+           
+            <tr>
+                <td>
+                    @Html.ActionLink("View Album", "PerviousAlbum", new { Id=item.AlbumId })
+                 </td>
+                <td>
+                    @item.AlbumName
+
+                </td>
+            </tr>
+        }
+
+
+
+    </table>
+}

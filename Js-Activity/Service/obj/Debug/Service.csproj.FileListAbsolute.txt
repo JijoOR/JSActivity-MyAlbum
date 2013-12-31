@@ -1,0 +1,8 @@
+D:\Feasibility Study\Js-Activity\Service\bin\Debug\Service.dll.config
+D:\Feasibility Study\Js-Activity\Service\bin\Debug\Service.dll
+D:\Feasibility Study\Js-Activity\Service\bin\Debug\Service.pdb
+D:\Feasibility Study\Js-Activity\Service\bin\Debug\EntityFramework.dll
+D:\Feasibility Study\Js-Activity\Service\bin\Debug\EntityFramework.xml
+D:\Feasibility Study\Js-Activity\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+D:\Feasibility Study\Js-Activity\Service\obj\Debug\Service.dll
+D:\Feasibility Study\Js-Activity\Service\obj\Debug\Service.pdb
